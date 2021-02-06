@@ -13,13 +13,13 @@ class Main extends Component {
                 <Header />
                 <Container>
                 <Grid container spacing={3}>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <Typography variant="h4" gutterBottom>
                             Groceries
                         </Typography>
                         <GroceryList />
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <Typography variant="h4" gutterBottom>
                                 Basket
                         </Typography>
