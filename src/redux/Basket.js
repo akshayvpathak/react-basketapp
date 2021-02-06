@@ -36,7 +36,7 @@ export const Basket = (state = {
             list.splice(index, 1);
             return {
                 ...state,
-                isEmpty: list.lenght ? true : false,
+                isEmpty: list.lenght ? false : true,
                 list: list
             };
         case ActionTypes.DECREMENT_BASKET_ITEM:
@@ -58,14 +58,14 @@ export const Basket = (state = {
                 list.splice(index, 1);
                 return {
                 ...state,
-                isEmpty: list.lenght ? true : false,
+                isEmpty: list.lenght ? false : true,
                 list: list
             };
             }
             else{
                 return {
                     ...state,
-                    isEmpty: false,
+                    isEmpty: list.lenght ? false : true,
                     list: basket
                 };
             }
