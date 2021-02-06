@@ -15,7 +15,7 @@ class Main extends Component {
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
                         <Typography variant="h4" gutterBottom>
-                            Groceries
+                            Grocery
                         </Typography>
                         <GroceryList />
                     </Grid>
